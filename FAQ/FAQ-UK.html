@@ -1,61 +1,69 @@
 <!DOCTYPE html>
 <html class="no-js logged-out" lang="EN">
 <head>
-  <title>FReDA Studie</title>
+  <title>FReDA Studie</title>                <!-- Titel der Website -->
   <!--[if IE]>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- responsives Anzeigen der Website-->
+  <meta name="google-site-verification" content="LkHlyBqVQs0PtQQyI9dCFwxTTOOCTS6FB1uQbToMnec" />
   <meta charset="UTF-8">
       <meta name="generator" content="EFS - Enterprise Feeedback Suite - http://www.questback.de">
       <meta name="DC.language" content="en" >
-    <link rel="stylesheet" href="assets_themes/1/js/jquery-ui/jquery-ui.min.css">
-  <link rel="stylesheet" href="assets_themes/1//bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="assets_themes/1/js/jquery-ui/jquery-ui.min.css"> <!-- Stylesheet für website mit jQuery-->
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
-  <!--[if IE]>
-  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled_for_IE_part.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=faqs">
+  <!--[if IE] bzw. wenn Browser=Internet Explorer> 
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled_for_IE_part.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=home_new">
   <![endif]-->
-  <![if !IE]>
+  <!-- unwichtig weil auskommentiert, wmgl von älterer Version-->
 
-  <!--Laden von Stylesheets-->
-  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=faqs">
-  <![endif]>
-  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_icomoon.tpl&amp;type=css&amp;lang_id=10&amp;39419898&amp;frmnd=faqs">
-  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_themify_icons.tpl&amp;type=css&amp;lang_id=10&amp;38436214&amp;frmnd=faqs">
-  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_custom.tpl&amp;type=css&amp;lang_id=10&amp;66099231&amp;frmnd=faqs">
+  <![if !IE]> <!--wenn browser nicht Internet Explorer ist-->
+  <!--Laden von verschiedenen Stylesheets-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  
-  <!--Laden von spezifischen JS Funktionen, wie modernizr, EmojiOne, jQuery-->
-  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_emojione.min.tpl&amp;type=css&amp;lang_id=10&amp;47203692&amp;frmnd=faqs">
-  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione.min.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=faqs"></script>
-  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_dev.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=faqs"></script>
-  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_efs.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=faqs"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
-  <script src="assets_themes/1/js/jquery-ui/jquery-ui.min.js"></script>
-  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_can_custom.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=faqs"></script>
-  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione_parser.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=faqs"></script>
-  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_activity_stream.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=faqs"></script>
-  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_online_status.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=faqs"></script>
-  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_notification.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=faqs"></script>
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=home_new">   
+  <![endif]>
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_icomoon.tpl&amp;type=css&amp;lang_id=10&amp;39419898&amp;frmnd=home_new">
+  <!-- CSS für Icon Schriften von IcoMoon-->
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_themify_icons.tpl&amp;type=css&amp;lang_id=10&amp;38436214&amp;frmnd=home_new">
+  <!--CSS für Themify Icons-->
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_custom.tpl&amp;type=css&amp;lang_id=10&amp;66099231&amp;frmnd=home_new">
+  <!-- eigenes Stylesheet für Anpassungen und Overrides-->
 
-  <script src="assets_themes/1/js/jquery-plugins/tokenfield/bootstrap-tokenfield.min.js"></script>
+  
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_emojione.min.tpl&amp;type=css&amp;lang_id=10&amp;47203692&amp;frmnd=home_new">  <!--Lädt Css für EmojyOne (Icon-Bib um Emojis einheitlich und hübsch darzustellen)-->
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione.min.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script> <!-- JS für EmojiOne Darstellung und evtl. Emoji Ersatz in älteren Browsern-->
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_dev.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_efs.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>  <!--beide Modernizr: überprüft ob Browser bestimmte Webtechniken unterstützt-->
+  <!-- Auskommentieren der älteren bootstrap version <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  <!-- Auskommentieren damit jQuery lädt <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script> -->  <!--jQuery von Google CDN wird geladen-->
+  <script src="assets_themes/1/js/jquery-ui/jquery-ui.min.js"></script>  <!--jQuery UI (Erweiterung von jQuery) wird geladen: ermöglicht zusätzliche Benutzeroberflächeneffekte-->
+
+  <!-- spezielle scripte für Freda-->
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_can_custom.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione_parser.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_activity_stream.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_online_status.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_notification.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+
+  <script src="assets_themes/1/js/jquery-plugins/tokenfield/bootstrap-tokenfield.min.js"></script> <!--Modifikation für Mehrfachauswahlfelder: Tag bei Enter im Eingabefeld wird erzeugt-->
   <link rel="stylesheet" href="assets_themes/1/js/jquery-plugins/tokenfield/css/bootstrap-tokenfield.css">
 
-<!--Modernizr für veraltete Browser- HTML Versionen-->
+  <!-- Wider Modernizr um bei evtl veralteter Broser Version Dinge nachzuladen-->
   <script type="text/javascript">
-    Modernizr.load({
+    Modernizr.load({ 
       test: Modernizr.canvas,
       nope: ['https://www.freda-studie.de/get_include.php?include_name=js_html5shiv.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&'), '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'.replace('&amp;', '&')]
     });
   </script>
   
-<!--Schutz for iFrame-->
-      <script type="text/javascript">if (top!=self) top.location=self.location;</script>
+
+      <script type="text/javascript">if (top!=self) top.location=self.location;</script>    <!-- Schutz gegen Clickjacking Angriffe-->
         <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.freda-studie.de/?lang_id=10&amp;list=main&amp;rss">
     <link rel="Shortcut Icon" href="assets_websites/7/favicon.ico">
 
-    
+    <!-- Prüfung ob Website in Frame oder iFrame angezeigt wird (Wird website direkt aufgerufen oder eingebettet in eine andere Website angezeigt)-->
     <script type="text/javascript">
       var fbCallbacks=[];
       function isFBAppContext() {

@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html class="no-js logged-out" lang="EN">
+<head>
+  <title>FReDA Studie</title>                <!-- Titel der Website -->
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- responsives Anzeigen der Website-->
+  <meta name="google-site-verification" content="LkHlyBqVQs0PtQQyI9dCFwxTTOOCTS6FB1uQbToMnec" />
+  <meta charset="UTF-8">
+      <meta name="generator" content="EFS - Enterprise Feeedback Suite - http://www.questback.de">
+      <meta name="DC.language" content="en" >
+    <link rel="stylesheet" href="assets_themes/1/js/jquery-ui/jquery-ui.min.css"> <!-- Stylesheet für website mit jQuery-->
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  
+
+  <!--[if IE] bzw. wenn Browser=Internet Explorer> 
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled_for_IE_part.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=home_new">
+  <![endif]-->
+  <!-- unwichtig weil auskommentiert, wmgl von älterer Version-->
+
+  <![if !IE]> <!--wenn browser nicht Internet Explorer ist-->
+  <!--Laden von verschiedenen Stylesheets-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=home_new">   
+  <![endif]>
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_icomoon.tpl&amp;type=css&amp;lang_id=10&amp;39419898&amp;frmnd=home_new">
+  <!-- CSS für Icon Schriften von IcoMoon-->
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_themify_icons.tpl&amp;type=css&amp;lang_id=10&amp;38436214&amp;frmnd=home_new">
+  <!--CSS für Themify Icons-->
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_custom.tpl&amp;type=css&amp;lang_id=10&amp;66099231&amp;frmnd=home_new">
+  <!-- eigenes Stylesheet für Anpassungen und Overrides-->
+  
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_emojione.min.tpl&amp;type=css&amp;lang_id=10&amp;47203692&amp;frmnd=home_new">  <!--Lädt Css für EmojyOne (Icon-Bib um Emojis einheitlich und hübsch darzustellen)-->
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione.min.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script> <!-- JS für EmojiOne Darstellung und evtl. Emoji Ersatz in älteren Browsern-->
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_dev.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_efs.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>  <!--beide Modernizr: überprüft ob Browser bestimmte Webtechniken unterstützt-->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>  <!--jQuery von Google CDN wird geladen-->
+  <script src="assets_themes/1/js/jquery-ui/jquery-ui.min.js"></script>  <!--jQuery UI (Erweiterung von jQuery) wird geladen: ermöglicht zusätzliche Benutzeroberflächeneffekte-->
+
+  <!-- spezielle scripte für Freda-->
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_can_custom.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione_parser.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_activity_stream.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_online_status.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_notification.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+
+  <script src="assets_themes/1/js/jquery-plugins/tokenfield/bootstrap-tokenfield.min.js"></script> <!--Modifikation für Mehrfachauswahlfelder: Tag bei Enter im Eingabefeld wird erzeugt-->
+  <link rel="stylesheet" href="assets_themes/1/js/jquery-plugins/tokenfield/css/bootstrap-tokenfield.css">
+
+  <!-- Wider Modernizr um bei evtl veralteter Broser Version Dinge nachzuladen-->
+  <script type="text/javascript">
+    Modernizr.load({ 
+      test: Modernizr.canvas,
+      nope: ['https://www.freda-studie.de/get_include.php?include_name=js_html5shiv.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&'), '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'.replace('&amp;', '&')]
+    });
+  </script>
+  
+
+      <script type="text/javascript">if (top!=self) top.location=self.location;</script>    <!-- Schutz gegen Clickjacking Angriffe-->
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.freda-studie.de/?lang_id=10&amp;list=main&amp;rss">
+    <link rel="Shortcut Icon" href="assets_websites/7/favicon.ico">
+
+    <!-- Prüfung ob Website in Frame oder iFrame angezeigt wird (Wird website direkt aufgerufen oder eingebettet in eine andere Website angezeigt)-->
+    <script type="text/javascript">
+      var fbCallbacks=[];
+      function isFBAppContext() {
+        
+                
+        if(top!=self) {
+          return true;
+        }
+        else {
+          return false;
+        }
+        
+                
+      }
+    </script>
+  
+  </head>
+<body id="home_new" class="efs">
+
+
+<!-- Container Element Header für Kopfbereich der Seite-->
+<header>
+<!--Navi Leiste-->    
+<div class="navbar-fixed-top">
+  <div class="navbar navbar-default">
+    <div class="container">
+      <a href="https://www.freda-studie.de/?lang_id=10"><div class="navbar-brand">&nbsp;</div></a>
+      <nav class="main-navigation" role="navigation">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".main-navigation-list">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse main-navigation-list">
+          <ul class="nav navbar-nav">
+                                                                                      <li class=" active">
+                    <a href="Startside-UK.html" id="menu-home_new"  class="">Home</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <a href="../Umfrage/Umfrage-UK.html" id="menu-umfrage"  class="">Опитування</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <!-- Auskommentieren der Ergebnisse<a href="https://www.freda-studie.de/Ergebnisse.php?SES=9ef61bea4e3a7a17485bf17eaec10959&amp;frmnd=faqs" id="menu-Ergebnisse"  class="">Ergebnisse</a>
+                                      </li> !-->
+                                                                                                        <li class=" ">
+                    <!-- Auskommentieren der News <a href="https://www.freda-studie.de/news.php?SES=9ef61bea4e3a7a17485bf17eaec10959&amp;frmnd=faqs" id="menu-news"  class="">News</a>
+                                      </li> !-->
+                                                                                                        <li class=" ">
+                    <a href="../FAQ/FAQ-UK.html" id="menu-faqs"  class="">FAQ</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <a href="https://www.freda-studie.de/links.php?SES=9ef61bea4e3a7a17485bf17eaec10959&amp;frmnd=faqs" id="menu-links"  class="">Посилання</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <a href="https://www.freda-studie.de/contact.php?SES=9ef61bea4e3a7a17485bf17eaec10959&amp;frmnd=faqs" id="menu-contact"  class="">Зв'яжіться з нами</a>
+                                      </li>
+                                                    </ul>
+                <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        🌐 Мова <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+    
+        <li>
+          <a href="Startside-DE.html">
+            <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width="20" style="margin-right: 5px;"> Deutsch
+          </a>
+        </li>
+        <li>
+          <a href="Startside-RS.html">
+            <img src="https://flagcdn.com/w20/ru.png" alt="Русский" width="20" style="margin-right: 5px;"> Русский
+          </a>
+        </li>
+        <li>
+          <a href="Startside-UK.html">
+            <img src="https://flagcdn.com/w20/ua.png" alt="Українська" width="20" style="margin-right: 5px;"> Українська
+          </a>
+        </li>
+      </ul>
+      </li>
+    </div>
+    </nav>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+<!--Website Banner-->
+<div class="banner-wrapper">
+  <div class="banner">
+    <div class="container">
+		<div class="studientitel">
+          <h1> <span class="doppelpfeil">&gt;&gt;</span>ПРИВІТ! Ми - FReDA!</h1>
+      	</div>
+    </div>
+  </div>
+</div>
+  
+<div class="content container">
+  <div class="row">
+
+    
+    <div class="main-content col-md-12" role="main">
+      
+      
+
+
+
+      
+ <!-- Websiten Text-->     
+      <div class="content-page-modules">
+        <h1></h1><span><p>Ви отримали від нас листа з проханням взяти участь у нашому опитуванні? На цій сторінці ми хотіли б представити вам FReDA. Ви також знайдете всю необхідну інформацію, щоб зв'язатися з нами, наприклад, якщо ви хочете повідомити нам свою нову адресу.</p>
+<p>«FReDA - Відносини та сімейне життя в Німеччині» - це велике наукове дослідження, в рамках якого опитуються люди по всій Німеччині на різних етапах їхнього життя. Нас цікавить ваша особиста думка на теми сім'ї та стосунків, освіти та роботи, планування сім'ї та загальної задоволеності життям.</p>
+<p>Для того, щоб отримати більш повну картину різних обставин вашого життя, нам важливо опитувати вас протягом більш тривалого періоду часу. Саме тому ви будете отримувати запрошення взяти участь в опитуванні FReDA двічі на рік.</p>
+<p>Участь у дослідженні є добровільною, а ваші дані залишаються анонімними. Дані оцінюються суто науково і дозволяють проводити актуальний аналіз сім'ї та населення в Німеччині. FReDA оперативно повідомляє про найважливіші результати політикам і громадськості.</p>
+<p>Дослідження проводиться спільно Федеральним інститутом демографічних досліджень (BiB) у Вісбадені та GESIS - Інститутом соціальних наук ім. Лейбніца в Мангеймі.</p>
+<div id="ubea-services" class="services-section">
+<div class="ubea-container">
+<div class="row">
+<div class="col-md-12 ubea-heading">
+<h2>Найважливіше з першого погляду:</h2>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<div class="row">
+<div class="col-md-8">
+<div class="feature-left"><span class="material-icons md-40 blue">schedule</span>
+<div class="feature-copy">
+<h3>Часу потрібно мінімум</h3>
+<p>Співбесіда займає всього 15-25 хвилин.</p>
+</div>
+</div>
+</div>
+<div class="col-md-8">
+<div id="hinweise" class="feature-left"><span class="material-icons md-40 blue">lock</span>
+<div class="feature-copy">
+<h3>Ваші дані в безпеці</h3>
+<p>Ми суворо дотримуємося положень Європейського загального регламенту щодо захисту даних (GDPR). Ваші дані будуть знеособлені. Ми за жодних обставин не передамо ваші контактні дані третім особам і видалимо їх після закінчення дослідження.</p>
+<p>Тут ви знайдете наші <a title="Datenschutzerklärungen" href="https://www.freda-studie.de/datenschutzerklaerungen.php?SES=632a12053dcfbaf2a4e0b4d2888dc80f&amp;frmnd=home_new">FReDA Заяви про захист даних</a>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="infas-kontakt" class="col-md-12" data-section="about">
+<div class="row">
+<div class="col-md-8">
+<div class="feature-left"><span class="material-icons md-40 blue">card_giftcard</span>
+<div class="feature-copy">
+<h3>Платить за участие</h3>
+<p>Разом із запрошенням на кожне опитування ви отримаєте від нас лист подяки.</p>
+</div>
+</div>
+</div>
+<div class="col-md-8" data-section="contact">
+<div class="feature-left"><span class="material-icons md-40 blue">mail</span>
+<div class="feature-copy">
+<h3>У вас є запитання до нас?</h3>
+<p>Надішліть нам електронного листа за адресою <a href="mailto:freda@gesis.org">freda@gesis.org</a> або зателефонуйте нам за номером 0621/1246-462.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div></span></div></div></div></div>
+<div class="content-wrapper content-wrapper--faq">
+<div class="content container">
+  <div class="row">
+    <div class="main-content col-md-12">
+      <div class="ontent-page-modules">
+
+<!-- Verlinkungen zu wichtigsten Fragen-->
+<section class="faq">
+  <h2 class="gpBoxTitle">Інформація про опитування</h2>
+  <div class="panel-group" id="ch_faq_id_module_home_new_3">
+          <div class="panel panel-default faq-item">
+        <div class="panel-heading accordion-toggle collapsed" data-target="#faq-item-53" data-toggle="collapse" data-parent="#ch_faq_id_module_home_new_3">
+          <h3 class="panel-title faq-question">
+            Про які теми йдеться?           
+          </h3>
+          <div class="icon"><span>&gt;&gt;</span></div>
+        </div>
+        <div class="panel-collapse collapse" id="faq-item-53">
+          <div class="panel-body faq-answer">
+            FReDA фокусується на індивідуальній життєвій ситуації людей у Німеччині: життя як самотньої людини, у партнерстві або в сім'ї з дітьми. Основна увага приділяється стосункам і сімейному життю: Як ви живете? Як ви організовуєте повсякденне життя у вашому партнерстві? Які інші люди важливі для вас? Особлива увага також приділяється плануванню сім'ї.<br /> Крім того, FReDA запитує про такі теми, як здоров'я та задоволеність життям: Наскільки ви задоволені своїм життям як самотня людина, як пара або як сім'я?<br /> Він також розглядає освіту та роботу: З якими проблемами ви стикаєтесь у своєму навчанні або професійному житті? І наскільки добре це поєднується з вашим особистим життям або сімейним життям?                      </div>
+        </div>
+      </div>
+          <div class="panel panel-default faq-item">
+        <div class="panel-heading accordion-toggle collapsed" data-target="#faq-item-51" data-toggle="collapse" data-parent="#ch_faq_id_module_home_new_3">
+          <h3 class="panel-title faq-question">
+            Що станеться з моїми даними?           
+          </h3>
+          <div class="icon"><span>&gt;&gt;</span></div>
+        </div>
+        <div class="panel-collapse collapse" id="faq-item-51">
+          <div class="panel-body faq-answer">
+            Ваші дані будуть аналізуватися тільки анонімно - неможливо зробити висновки про вас як про особистість, а тільки твердження на кшталт «70% людей живуть не далі, ніж в годині їзди від батьків».<br /> Після завершення дослідження відповіді без імен та контактних даних будуть зберігатися відповідно до належної наукової практики і стануть доступними для подальшого наукового використання в дослідженнях і викладанні. Імена та контактні дані будуть видалені після завершення дослідження.<br /> Потім FReDA повідомляє про найважливіші результати цього аналізу політикам і громадськості. Таким чином, ваші дані можуть стати основою для майбутніх соціальних і політичних рішень.                      </div>
+        </div>
+      </div>
+          <div class="panel panel-default faq-item">
+        <div class="panel-heading accordion-toggle collapsed" data-target="#faq-item-54" data-toggle="collapse" data-parent="#ch_faq_id_module_home_new_3">
+          <h3 class="panel-title faq-question">
+            Чи є участь добровільною?          
+          </h3>
+          <div class="icon"><span>&gt;&gt;</span></div>
+        </div>
+        <div class="panel-collapse collapse" id="faq-item-54">
+          <div class="panel-body faq-answer">
+            Так, участь, звичайно, є добровільною! Однак ваша думка дуже важлива для нас і не може бути просто замінена іншою. Дослідження дає можливість дослідити багато тем у сферах партнерства, сім'ї та задоволеності життям.                      </div>
+        </div>
+      </div>
+          <div class="panel panel-default faq-item">
+        <div class="panel-heading accordion-toggle collapsed" data-target="#faq-item-52" data-toggle="collapse" data-parent="#ch_faq_id_module_home_new_3">
+          <h3 class="panel-title faq-question">
+            Як часто я буду проходити співбесіди?          
+          </h3>
+          <div class="icon"><span>&gt;&gt;</span></div>
+        </div>
+        <div class="panel-collapse collapse" id="faq-item-52">
+          <div class="panel-body faq-answer">
+            FReDA цікавиться поточними умовами життя в Німеччині, а також змінами, що відбуваються з плином часу. Тому ми хотіли б продовжити опитування в майбутньому, щоб дізнатися, як ваше життя і погляди змінюються з плином часу. Як правило, ми розсилаємо запрошення взяти участь в опитуванні двічі на рік.            </div>
+        </div>
+      </div>
+          <div class="panel panel-default faq-item">
+        <div class="panel-heading accordion-toggle collapsed" data-target="#faq-item-49" data-toggle="collapse" data-parent="#ch_faq_id_module_home_new_3">
+          <h3 class="panel-title faq-question">
+            Наскільки захищені мої дані?           
+          </h3>
+          <div class="icon"><span>&gt;&gt;</span></div>
+        </div>
+        <div class="panel-collapse collapse" id="faq-item-49">
+          <div class="panel-body faq-answer">
+            У FReDA ми суворо дотримуємося положень Європейського Загального регламенту про захист даних (GDPR). Ваші дані є анонімними і не дозволяють зробити жодних висновків про вашу особу. Ми за жодних обставин не передаємо ваші контактні дані третім особам. Ви можете знайти нашу політику конфіденційності <a href="https://www.freda-studie.de/datenschutzerklaerungen.php?SES=632a12053dcfbaf2a4e0b4d2888dc80f&amp;frmnd=home_new">тут</a>. Якщо у вас виникли запитання щодо захисту даних, будь ласка, напишіть нам на <a href="mailto:datenschutz.freda@gesis.org">datenschutz.freda@gesis.org</a> або зателефонуйте нам за номером 0621 / 1246-462.                      </div>
+        </div>
+      </div>
+          <div class="panel panel-default faq-item">
+        <div class="panel-heading accordion-toggle collapsed" data-target="#faq-item-50" data-toggle="collapse" data-parent="#ch_faq_id_module_home_new_3">
+          <h3 class="panel-title faq-question">
+            Що означає абревіатура «FReDA»?         
+          </h3>
+          <div class="icon"><span>&gt;&gt;</span></div>
+        </div>
+        <div class="panel-collapse collapse" id="faq-item-50">
+          <div class="panel-body faq-answer">
+            Абревіатура FReDA розшифровується як „<strong>F</strong>amily <strong>Re</strong>search and <strong>D</strong>emographic <strong>A</strong>nalysis“ (приблизно «Дослідження сім'ї та демографічний аналіз» українською мовою) і описує науковий зміст усього дослідницького проекту. Тому для кращого розуміння ми завжди посилаємося на «FReDA - Відносини та сімейне життя в Німеччині».                      </div>
+        </div>
+      </div>
+          <div class="panel panel-default faq-item">
+        <div class="panel-heading accordion-toggle collapsed" data-target="#faq-item-57" data-toggle="collapse" data-parent="#ch_faq_id_module_home_new_3">
+          <h3 class="panel-title faq-question">
+            Чому проводиться два опитування на рік?          
+          </h3>
+          <div class="icon"><span>&gt;&gt;</span></div>
+        </div>
+        <div class="panel-collapse collapse" id="faq-item-57">
+          <div class="panel-body faq-answer">
+            Кожен рік відповідає хвилі опитування у FReDA. Хвиля панелі FReDA складається з двох відповідних підхвиль: Навесні та восени кожного року респонденти заповнюють анкету, при цьому лише невелика частина анкети включається в обидва опитування, а більша частина - лише в одне з двох опитувань. Обидва опитування разом складають повну хвилю опитування з усіма запитаннями, запланованими на цей рік. Однак їх також можна оцінювати незалежно або об'єднувати з іншими частковими хвилями для аналізу.                      </div>
+        </div>
+      </div>
+      </div>
+</section>
+      </div>      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!--Container Element Footer für Impressum-->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="copyright col-md-4">
+        <p>©2025 FReDA</p>
+      </div>
+      <div class="col-md-8">
+        <ul class="subnavigation text-right" role="menu">
+ <li><a href="https://www.freda-studie.de/datenschutz.php?SES=632a12053dcfbaf2a4e0b4d2888dc80f&amp;frmnd=home_new">Захист даних</a></li>
+  <li><a href="https://www.freda-studie.de/impressum.php?SES=632a12053dcfbaf2a4e0b4d2888dc80f&amp;frmnd=home_new">Відбиток</a></li>
+</ul>      </div>
+    </div>
+  </div>
+</footer>
+
+  <div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+<script>
+  
+  Modernizr.load([
+    { load: 'https://www.freda-studie.de/get_include.php?include_name=js_bootstrap.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&') },
+    { load: 'https://www.freda-studie.de/get_include.php?include_name=js_slimbox.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&') },
+    { load: 'https://www.freda-studie.de/get_include.php?include_name=js_default.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&') },
+    { load: 'assets_themes/1/bootstrap-select/dist/js/bootstrap-select.min.js'.replace('&amp;', '&') },
+    { load: 'assets_themes/1/js/combobox.js'.replace('&amp;', '&') },
+    {
+      test: (Modernizr.input['multiple']),
+      nope: 'https://www.freda-studie.de/get_include.php?include_name=js_upload_fallback.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    },
+    {
+      test: ($('[data-editor]').length > 0 || $('[data-editor-news]').length > 0),
+      yep: '/layout/lib/js/tiny_mce/tiny_mce.js',
+      complete: function(){
+        if(window.tinymce) {
+          Modernizr.load({
+            load: 'https://www.freda-studie.de/get_include.php?include_name=js_editor.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&'),
+            complete: function(){
+              if($('[data-editor]').length > 0) add_rich_text_editor();
+              if($('[data-editor-news]').length > 0) add_rich_text_editor_news();
+            }
+          });
+        }
+      }
+    },
+    {
+      test: ($('[data-upload]').length > 0),
+      yep: 'https://www.freda-studie.de/get_include.php?include_name=js_upload_button.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    },
+    {
+      test: ($('.chat-form').length > 0),
+      yep: 'https://www.freda-studie.de/get_include.php?include_name=js_chat.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    },
+    {
+      test: ($('.btn-messages-delete').length > 0),
+      yep: 'https://www.freda-studie.de/get_include.php?include_name=js_messages_full.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    }
+  ]);
+  
+</script>
+<script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_panelsearch.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+<script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_taxonomycloud.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+<script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_community_feedback.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+
+<script>
+  
+	var goToTop = function() {
+
+		$('.js-gotop').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('html').offset().top
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
+
+		$(window).scroll(function(){
+
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$('.js-top').addClass('active');
+			} else {
+				$('.js-top').removeClass('active');
+			}
+
+		});
+	
+	};
+  
+  $(function(){
+		goToTop();
+	});
+
+    
+  </script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>              

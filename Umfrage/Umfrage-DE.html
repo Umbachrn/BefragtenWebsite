@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html class="no-js logged-out" lang="EN">  <!--gibt an ob Benutzer eingeloggt-->
+<head>
+  <title>FReDA Studie</title>
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">    <!--responsives Design-->
+  <meta charset="UTF-8">
+      <meta name="generator" content="EFS - Enterprise Feeedback Suite - http://www.questback.de">
+      <meta name="DC.language" content="en" >
+    <link rel="stylesheet" href="assets_themes/1/js/jquery-ui/jquery-ui.min.css">   <!--Framework für interaktive Komponenten-->
+  <link rel="stylesheet" href="assets_themes/1//bootstrap-select/dist/css/bootstrap-select.min.css"> <!--Erweiterung für drop-down Menus-->
+
+  <!--[if IE]>
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled_for_IE_part.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=umfrage">
+  <![endif]-->
+  <![if !IE]>  <!--Nur für Internetexplorer relevant-->
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=umfrage">
+  <![endif]>
+
+  <!--Laden von CSS Dateien IcoMoons, Themify Icons...-->
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_icomoon.tpl&amp;type=css&amp;lang_id=10&amp;39419898&amp;frmnd=umfrage">
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_themify_icons.tpl&amp;type=css&amp;lang_id=10&amp;38436214&amp;frmnd=umfrage">
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_custom.tpl&amp;type=css&amp;lang_id=10&amp;66099231&amp;frmnd=umfrage">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  
+  <!--Scripte für flexbox, Grundstruktur...-->
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_emojione.min.tpl&amp;type=css&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage">
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione.min.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_dev.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_efs.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>
+  <script src="assets_themes/1/js/jquery-ui/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_can_custom.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione_parser.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_activity_stream.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_online_status.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_notification.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+
+  <script src="assets_themes/1/js/jquery-plugins/tokenfield/bootstrap-tokenfield.min.js"></script>
+  <link rel="stylesheet" href="assets_themes/1/js/jquery-plugins/tokenfield/css/bootstrap-tokenfield.css">
+
+<!--Test ob Browser moderne HTML5 Technologie unterstützt- wenn nicht nachladen von 2 polyfills für Darstellung-->
+  <script type="text/javascript">
+    Modernizr.load({
+      test: Modernizr.canvas,
+      nope: ['https://www.freda-studie.de/get_include.php?include_name=js_html5shiv.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&'), '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'.replace('&amp;', '&')]
+    });
+  </script>
+  
+<!--Schutz gegen iFrame-->
+      <script type="text/javascript">if (top!=self) top.location=self.location;</script>
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.freda-studie.de/?lang_id=10&amp;list=main&amp;rss">
+    <link rel="Shortcut Icon" href="assets_websites/7/favicon.ico">
+
+<!--Überprüfung ob Website eingebettet oder nicht ausgegeben wird-->   
+    <script type="text/javascript">
+      var fbCallbacks=[];
+      function isFBAppContext() {
+        
+                
+        if(top!=self) {
+          return true;
+        }
+        else {
+          return false;
+        }
+        
+                
+      }
+    </script>
+  
+  </head>
+<body id="umfrage" class="efs">
+
+
+
+<header>
+<!--Navi Leiste-->    
+<div class="navbar-fixed-top">
+  <div class="navbar navbar-default">
+    <div class="container">
+      <a href="https://www.freda-studie.de/?lang_id=10"><div class="navbar-brand">&nbsp;</div></a>
+      <nav class="main-navigation" role="navigation">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".main-navigation-list">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse main-navigation-list">
+          <ul class="nav navbar-nav">
+                                                                                      <li class=" ">
+                    <a href="../Startseite/Startside-DE.html" id="menu-home_new"  class="">Home</a>
+                                      </li>
+                                                                                                        <li class=" active">
+                    <a href="Umfrage-DE.html" id="menu-umfrage"  class="">Umfrage</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <!-- Auskommentieren der Ergebnisse<a href="https://www.freda-studie.de/Ergebnisse.php?SES=9ef61bea4e3a7a17485bf17eaec10959&amp;frmnd=faqs" id="menu-Ergebnisse"  class="">Ergebnisse</a>
+                                      </li> !-->
+                                                                                                        <li class=" ">
+                    <!-- Auskommentieren der News <a href="https://www.freda-studie.de/news.php?SES=9ef61bea4e3a7a17485bf17eaec10959&amp;frmnd=faqs" id="menu-news"  class="">News</a>
+                                      </li> !-->
+                                                                                                        <li class=" ">
+                    <a href="../FAQ/FAQ-DE.html" id="menu-faqs"  class="">FAQ</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <a href="https://www.freda-studie.de/links.php?SES=9ef61bea4e3a7a17485bf17eaec10959&amp;frmnd=faqs" id="menu-links"  class="">Links</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <a href="https://www.freda-studie.de/contact.php?SES=9ef61bea4e3a7a17485bf17eaec10959&amp;frmnd=faqs" id="menu-contact"  class="">Kontakt</a>
+                                      </li>
+                                                    </ul>
+                <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        🌐 Sprache <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+    
+        <li>
+          <a href="Umfrage-DE.html">
+            <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width="20" style="margin-right: 5px;"> Deutsch
+          </a>
+        </li>
+        <li>
+          <a href="Umfrage-RS.html">
+            <img src="https://flagcdn.com/w20/ru.png" alt="Русский" width="20" style="margin-right: 5px;"> Русский
+          </a>
+        </li>
+        <li>
+          <a href="Umfrage-UK.html">
+            <img src="https://flagcdn.com/w20/ua.png" alt="Українська" width="20" style="margin-right: 5px;"> Українська
+          </a>
+        </li>
+      </ul>
+      </li>
+    </div>
+    </nav>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+<!--Websitenbanner-->
+<div class="content container">
+  <div class="row">
+    
+<div class="content container">
+  <div class="row">
+
+<div class="content container">
+  <div class="row">
+
+    
+    <div class="main-content col-md-12" role="main">
+      
+      
+
+
+
+      
+<!-- Text und Eingabefeld-->
+      <div class="content-page-modules">
+        <h1></h1><span><big><big><font color="#0072bc"> Liebe Befragte,</font></big><br /><br />wir freuen uns sehr, dass Sie die Befragung online beantworten möchten.<br /><br />Um die Befragung zu starten, geben Sie unten bitte den Zugangscode ein, den Sie per Post erhalten haben. Bitte beachten Sie dabei Groß- und Kleinschreibung. <br /><br /></big></span>
+<div class="gpBoxContent surveycode-block">
+  <div class="gpFormRow">
+    <form action="umfrage.php?=0&amp;SES=632a12053dcfbaf2a4e0b4d2888dc80f&amp;frmnd=umfrage#surveycode" method="post" role="form" name="scForm">   <!--Verschicken der Eingabe via POST an umfrage.php-->
+      <div class="gpFormRow">
+        <div class="flex-container flex-container--surveycode">
+        <label for="surveycode" class="control-label">Zugangscode:</label> <!--Eingabefeld für survey code-->
+        <span class="inr"><input type="text" name="surveycode" id="surveycode" value="" class="gpTextInput form-control" placeholder="" required></span>
+        <input name="contact-submit" class="gpSubmit btn btn-primary" value="Umfrage starten" type="submit"> <!--Startet die Umfrage-->
+        </div>
+      </div>
+    <input type="hidden" name="SES" value="632a12053dcfbaf2a4e0b4d2888dc80f" /><input type="hidden" name="frmnd" value="umfrage" /><input type="hidden" name="c_form_token" value="1137249403" /></form>
+</div><h1></h1><span><br />Bei Fragen und Problemen kontaktieren Sie uns unter 0621/1246-462 oder per E-Mail <a href="mailto:freda@gesis.org">freda@gesis.org</a>.</span>      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!--Container Element footer für das Impressum-->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="copyright col-md-4">
+        <p>©2025 FReDA</p>
+      </div>
+      <div class="col-md-8">
+        <ul class="subnavigation text-right" role="menu">
+ <li><a href="https://www.freda-studie.de/datenschutz.php?SES=632a12053dcfbaf2a4e0b4d2888dc80f&amp;frmnd=umfrage">Datenschutz</a></li>
+  <li><a href="https://www.freda-studie.de/impressum.php?SES=632a12053dcfbaf2a4e0b4d2888dc80f&amp;frmnd=umfrage">Impressum</a></li>
+</ul>      </div>
+    </div>
+  </div>
+</footer>
+
+  <div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+<!--Ladeplan für Webanwendungen, wie modernizr-->
+<script>
+  
+  Modernizr.load([
+    { load: 'https://www.freda-studie.de/get_include.php?include_name=js_bootstrap.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&') },
+    { load: 'https://www.freda-studie.de/get_include.php?include_name=js_slimbox.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&') },
+    { load: 'https://www.freda-studie.de/get_include.php?include_name=js_default.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&') },
+    { load: 'assets_themes/1/bootstrap-select/dist/js/bootstrap-select.min.js'.replace('&amp;', '&') },
+    { load: 'assets_themes/1/js/combobox.js'.replace('&amp;', '&') },
+    {
+      test: (Modernizr.input['multiple']),
+      nope: 'https://www.freda-studie.de/get_include.php?include_name=js_upload_fallback.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    },
+    {
+      test: ($('[data-editor]').length > 0 || $('[data-editor-news]').length > 0),
+      yep: '/layout/lib/js/tiny_mce/tiny_mce.js',
+      complete: function(){
+        if(window.tinymce) {
+          Modernizr.load({
+            load: 'https://www.freda-studie.de/get_include.php?include_name=js_editor.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&'),
+            complete: function(){
+              if($('[data-editor]').length > 0) add_rich_text_editor();
+              if($('[data-editor-news]').length > 0) add_rich_text_editor_news();
+            }
+          });
+        }
+      }
+    },
+    {
+      test: ($('[data-upload]').length > 0),
+      yep: 'https://www.freda-studie.de/get_include.php?include_name=js_upload_button.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    },
+    {
+      test: ($('.chat-form').length > 0),
+      yep: 'https://www.freda-studie.de/get_include.php?include_name=js_chat.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    },
+    {
+      test: ($('.btn-messages-delete').length > 0),
+      yep: 'https://www.freda-studie.de/get_include.php?include_name=js_messages_full.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    }
+  ]);
+  
+</script>
+<script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_panelsearch.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+<script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_taxonomycloud.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+<script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_community_feedback.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=umfrage"></script>
+
+<script>
+  
+	var goToTop = function() {
+
+		$('.js-gotop').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('html').offset().top
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
+
+		$(window).scroll(function(){
+
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$('.js-top').addClass('active');
+			} else {
+				$('.js-top').removeClass('active');
+			}
+
+		});
+	
+	};
+  
+  $(function(){
+		goToTop();
+	});
+   
+  </script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>         

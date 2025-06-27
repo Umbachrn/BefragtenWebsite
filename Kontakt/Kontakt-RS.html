@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html class="no-js logged-out" lang="EN">
+<head>
+  <title>FReDA Studie</title>                <!-- Titel der Website -->
+  <!--[if IE]>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">      <!-- responsives Anzeigen der Website-->
+  <meta name="google-site-verification" content="LkHlyBqVQs0PtQQyI9dCFwxTTOOCTS6FB1uQbToMnec" />
+  <meta charset="UTF-8">
+      <meta name="generator" content="EFS - Enterprise Feeedback Suite - http://www.questback.de">
+      <meta name="DC.language" content="en" >
+    <link rel="stylesheet" href="assets_themes/1/js/jquery-ui/jquery-ui.min.css"> <!-- Stylesheet für website mit jQuery-->
+    <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+  <!--[if IE] bzw. wenn Browser=Internet Explorer> 
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled_for_IE_part.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=home_new">
+  <![endif]-->
+  <!-- unwichtig weil auskommentiert, wmgl von älterer Version-->
+
+  <![if !IE]> <!--wenn browser nicht Internet Explorer ist-->
+  <!--Laden von verschiedenen Stylesheets-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=home_new">   
+  <![endif]>
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_icomoon.tpl&amp;type=css&amp;lang_id=10&amp;39419898&amp;frmnd=home_new">
+  <!-- CSS für Icon Schriften von IcoMoon-->
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_themify_icons.tpl&amp;type=css&amp;lang_id=10&amp;38436214&amp;frmnd=home_new">
+  <!--CSS für Themify Icons-->
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_custom.tpl&amp;type=css&amp;lang_id=10&amp;66099231&amp;frmnd=home_new">
+  <!-- eigenes Stylesheet für Anpassungen und Overrides-->
+
+  
+  <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_emojione.min.tpl&amp;type=css&amp;lang_id=10&amp;47203692&amp;frmnd=home_new">  <!--Lädt Css für EmojyOne (Icon-Bib um Emojis einheitlich und hübsch darzustellen)-->
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione.min.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script> <!-- JS für EmojiOne Darstellung und evtl. Emoji Ersatz in älteren Browsern-->
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_dev.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_efs.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>  <!--beide Modernizr: überprüft ob Browser bestimmte Webtechniken unterstützt-->
+  <!-- Auskommentieren der älteren bootstrap version <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  <!-- Auskommentieren damit jQuery lädt <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script> -->  <!--jQuery von Google CDN wird geladen-->
+  <script src="assets_themes/1/js/jquery-ui/jquery-ui.min.js"></script>  <!--jQuery UI (Erweiterung von jQuery) wird geladen: ermöglicht zusätzliche Benutzeroberflächeneffekte-->
+
+  <!-- spezielle scripte für Freda-->
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_can_custom.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione_parser.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_activity_stream.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_online_status.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+  <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_notification.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
+
+  <script src="assets_themes/1/js/jquery-plugins/tokenfield/bootstrap-tokenfield.min.js"></script> <!--Modifikation für Mehrfachauswahlfelder: Tag bei Enter im Eingabefeld wird erzeugt-->
+  <link rel="stylesheet" href="assets_themes/1/js/jquery-plugins/tokenfield/css/bootstrap-tokenfield.css">
+
+  <!-- Wider Modernizr um bei evtl veralteter Broser Version Dinge nachzuladen-->
+  <script type="text/javascript">
+    Modernizr.load({ 
+      test: Modernizr.canvas,
+      nope: ['https://www.freda-studie.de/get_include.php?include_name=js_html5shiv.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&'), '//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js'.replace('&amp;', '&')]
+    });
+  </script>
+  
+
+      <script type="text/javascript">if (top!=self) top.location=self.location;</script>    <!-- Schutz gegen Clickjacking Angriffe-->
+        <link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.freda-studie.de/?lang_id=10&amp;list=main&amp;rss">
+    <link rel="Shortcut Icon" href="assets_websites/7/favicon.ico">
+
+    <!-- Prüfung ob Website in Frame oder iFrame angezeigt wird (Wird website direkt aufgerufen oder eingebettet in eine andere Website angezeigt)-->
+    <script type="text/javascript">
+      var fbCallbacks=[];
+      function isFBAppContext() {
+        
+                
+        if(top!=self) {
+          return true;
+        }
+        else {
+          return false;
+        }
+        
+                
+      }
+    </script>
+  
+  </head>
+<body id="contact" class="efs">
+
+
+<!-- Container Element header mit folgender Navi Leiste-->
+<header>
+    
+<div class="navbar-fixed-top">
+  <div class="navbar navbar-default">
+    <div class="container">
+      <a href="https://www.freda-studie.de/?lang_id=10"><div class="navbar-brand">&nbsp;</div></a>
+      <nav class="main-navigation" role="navigation">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".main-navigation-list">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse main-navigation-list">
+          <ul class="nav navbar-nav">
+                                                                                      <li class=" ">
+                    <a href="../Startseite/Startside-RS.html" id="menu-home_new"  class="">Home</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <a href="../Umfrage/Umfrage-RS.html" id="menu-umfrage"  class="">Исследование</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <!-- Auskommentieren von Ergebnisse <a href="https://www.freda-studie.de/Ergebnisse.php?SES=6d0dc76d92e6f47700592b850e1e8ff0&amp;frmnd=contact" id="menu-Ergebnisse"  class="">Ergebnisse</a>
+                                      </li> -->
+                                                                                                        <li class=" ">
+                    <!-- Auskommentieren von news <a href="https://www.freda-studie.de/news.php?SES=6d0dc76d92e6f47700592b850e1e8ff0&amp;frmnd=contact" id="menu-news"  class="">News</a>
+                                      </li> -->
+                                                                                                        <li class=" ">
+                    <a href="../FAQ/FAQ-RS.html" id="menu-faqs"  class="">FAQ</a>
+                                      </li>
+                                                                                                        <li class=" ">
+                    <a href="../Links/Links-RS.html" id="menu-links"  class="">Ссылки</a>
+                                      </li>
+                                                                                                        <li class=" active">
+                    <a href="Kontakt-RS.html" id="menu-contact"  class="">Свяжитесь с нами</a>
+                                      </li>
+                                                    </ul>
+                  <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        🌐 Язык <span class="caret"></span>
+      </a>
+      <ul class="dropdown-menu">
+    
+        <li>
+          <a href="Kontakt-DE.html">
+            <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width="20" style="margin-right: 5px;"> Deutsch
+          </a>
+        </li>
+        <li>
+          <a href="Kontakt-RS.html">
+            <img src="https://flagcdn.com/w20/ru.png" alt="Русский" width="20" style="margin-right: 5px;"> Русский
+          </a>
+        </li>
+        <li>
+          <a href="Kontakt-UK.html">
+            <img src="https://flagcdn.com/w20/ua.png" alt="Українська" width="20" style="margin-right: 5px;"> Українська
+          </a>
+        </li>
+      </ul>
+      </li>
+    </div>
+    </nav>
+    </div>
+  </div>
+</div>
+
+</header>
+<!--Websitenbanner-->
+<div class="content container">
+  <div class="row">
+    
+<div class="content container">
+  <div class="row">
+
+<div class="content container">
+  <div class="row">
+
+    
+    <div class="main-content col-md-12" role="main">
+      
+      
+
+
+
+      
+      
+      <div class="content-page-modules">
+        <h1>Свяжитесь с нами</h1><span><p>Вы также можете связаться с нами по электронной почте по адресу <a href="mailto:freda@gesis.org">freda@gesis.org</a> или по номеру телефона 0621/1246-462.</p></span><section class="contact-form">
+        <!--Erstellung des Kontaktformulars mit form "action" gibt dabei an wohin Fomularinhalte geschickt werden-->
+      <form action="/contact.php?SES=9ef61bea4e3a7a17485bf17eaec10959&amp;ch_stage_contact=execute&amp;frmnd=contact" method="post" class="form-horizontal" role="form">
+              <div class="form-group">
+          <label for="ch_name_contact" class="col-sm-12 control-label">Имя <span class="form-field-required">*</span></label>
+          <div class="col-sm-6"><input type="text" class="form-control" name="ch_name_contact" id="ch_name_contact" value="" required></div>
+        </div>
+        <!--div class="form-group" sind die Eingabefelder-->
+      	<div class="form-group">
+          <label for="ch_email_contact" class="col-sm-12 control-label">E-Mail <span class="form-field-required">*</span></label>
+          <div class="col-sm-6"><input type="text" class="form-control" name="ch_email_contact" id="ch_email_contact" value="" required></div>
+        </div>
+            <div class="form-group">
+        <label for="ch_subject_contact" class="col-sm-12 control-label">Объект <span class="form-field-required">*</span></label>
+        <div class="col-sm-6"><input type="text" class="form-control" name="ch_subject_contact" id="ch_subject_contact" value="" required></div>
+      </div>
+      <div class="form-group">
+        <label for="ch_topic_contact[]" class="col-sm-12 control-label">Тема </label>
+        <div class="col-sm-6">
+          <select class="form-control" name="ch_topic_contact[]" id="ch_topic_contact[]">
+                          <option value="0" selected="selected">Изменение моих контактных данных</option>
+                          <option value="1">Вопросы об исследовании</option>
+                          <option value="2">Вопросы о защите данных</option>
+                          <option value="3">Технические проблемы</option>
+                          <option value="4">Другая забота</option>
+                      </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="ch_content_contact" class="col-sm-12 control-label">Inhalt <span class="form-field-required">*</span></label>
+        <div class="col-sm-6"><textarea class="form-control" name="ch_content_contact" id="ch_content_contact" required></textarea></div>
+      </div>
+ 
+    <!--Beide Honeypot Felder sind unsichtbar und sollen Bots erwischen-->
+      <!-- Honeypot-Feld -->
+    <input type="text" name="subject_phone" style="display:none;">
+      
+      <!-- Honeypot Checkbox -->
+	  <input type="checkbox" name="contact_me_by_phone_only" value="1" style="display:none;" tabindex="-1" autocomplete="off">
+      
+      
+        
+      <input type="hidden" id="ch_javascript_contact" name="ch_javascript_contact" value="">
+      <script type="text/javascript">var __js='';</script>
+      <script language="JavaScript" type="text/javascript">__js=10;</script>
+      <script language="JavaScript1.1" type="text/javascript">__js=11;</script>
+      <script language="JavaScript1.2" type="text/javascript">__js=12;</script>
+      <script language="JavaScript1.3" type="text/javascript">__js=13;</script>
+      <script language="JavaScript1.4" type="text/javascript">__js=14;</script>
+      <script language="JavaScript1.5" type="text/javascript">__js=15;</script>
+      <script language="JavaScript1.6" type="text/javascript">__js=16;</script>
+      <script language="JavaScript1.7" type="text/javascript">__js=17;</script>
+      <script language="JavaScript2.0" type="text/javascript">__js=20;</script>
+      <script type="text/javascript">
+        (function(){ var interval = setInterval(function(){if(window.jQuery) clearInterval(interval); if ($('#ch_javascript_contact')) $('#ch_javascript_contact').attr('value', __js); },500);})();
+      </script>
+
+      <div class="form-group">
+        <div class="col-sm-4">
+          <p class="contact-form-mandatory-fields">Поля, отмеченные символом <span class="form-field-required">*</span>, являются обязательными для заполнения.</p>
+        </div>
+        <div class="col-sm-2 btn-container">
+          <button type="submit" name="contact-submit" class="btn btn-primary">Отправка</button>  <!--Abesendebutton-->
+        </div>
+      </div>
+  <input type="hidden" name="SES" value="6d0dc76d92e6f47700592b850e1e8ff0" /><input type="hidden" name="frmnd" value="contact" /><input type="hidden" name="c_form_token" value="1589492126" /></form>
+
+</section>Вы ученый и хотите узнать больше о FReDA? <span style="color: #f49c24;">>></span> Более подробную информацию вы можете найти здесь: </a> <a href="https://www.freda-panel.de" target="_blank">www.freda-panel.de</a>      </div>
+    </div>
+
+
+  </div>
+</div>
+
+<!-- Containerelement mit Impressum-->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="copyright col-md-4">
+        <p>©2025 FReDA</p>
+      </div>
+      <div class="col-md-8">
+        <ul class="subnavigation text-right" role="menu">
+ <li><a href="https://www.freda-studie.de/datenschutz.php?SES=6d0dc76d92e6f47700592b850e1e8ff0&amp;frmnd=contact">Защита данных</a></li>
+  <li><a href="https://www.freda-studie.de/impressum.php?SES=6d0dc76d92e6f47700592b850e1e8ff0&amp;frmnd=contact">Оттиск</a></li>
+</ul>      </div>
+    </div>
+  </div>
+</footer>
+
+  <div class="gototop js-top">
+		<a href="#" class="js-gotop"><i class="icon-arrow-up"></i></a>
+	</div>
+
+<!--Ladeplan für Webanwendungen, wie modernizr-->
+<script>
+ 
+  Modernizr.load([
+    { load: 'https://www.freda-studie.de/get_include.php?include_name=js_bootstrap.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&') },
+    { load: 'https://www.freda-studie.de/get_include.php?include_name=js_slimbox.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&') },
+    { load: 'https://www.freda-studie.de/get_include.php?include_name=js_default.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&') },
+    { load: 'assets_themes/1/bootstrap-select/dist/js/bootstrap-select.min.js'.replace('&amp;', '&') },
+    { load: 'assets_themes/1/js/combobox.js'.replace('&amp;', '&') },
+    {
+      test: (Modernizr.input['multiple']),
+      nope: 'https://www.freda-studie.de/get_include.php?include_name=js_upload_fallback.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    },
+    {
+      test: ($('[data-editor]').length > 0 || $('[data-editor-news]').length > 0),
+      yep: '/layout/lib/js/tiny_mce/tiny_mce.js',
+      complete: function(){
+        if(window.tinymce) {
+          Modernizr.load({
+            load: 'https://www.freda-studie.de/get_include.php?include_name=js_editor.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&'),
+            complete: function(){
+              if($('[data-editor]').length > 0) add_rich_text_editor();
+              if($('[data-editor-news]').length > 0) add_rich_text_editor_news();
+            }
+          });
+        }
+      }
+    },
+    {
+      test: ($('[data-upload]').length > 0),
+      yep: 'https://www.freda-studie.de/get_include.php?include_name=js_upload_button.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    },
+    {
+      test: ($('.chat-form').length > 0),
+      yep: 'https://www.freda-studie.de/get_include.php?include_name=js_chat.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    },
+    {
+      test: ($('.btn-messages-delete').length > 0),
+      yep: 'https://www.freda-studie.de/get_include.php?include_name=js_messages_full.tpl&amp;type=javascript&amp;lang_id=10&amp;login_code=&amp;47203692'.replace('&amp;', '&')
+    }
+  ]);
+  
+</script>
+<script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_panelsearch.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=contact"></script>
+<script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_taxonomycloud.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=contact"></script>
+<script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_community_feedback.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=contact"></script>
+
+<script>
+  
+	var goToTop = function() {
+
+		$('.js-gotop').on('click', function(event){
+			
+			event.preventDefault();
+
+			$('html, body').animate({
+				scrollTop: $('html').offset().top
+			}, 500, 'easeInOutExpo');
+			
+			return false;
+		});
+
+		$(window).scroll(function(){
+
+			var $win = $(window);
+			if ($win.scrollTop() > 200) {
+				$('.js-top').addClass('active');
+			} else {
+				$('.js-top').removeClass('active');
+			}
+
+		});
+	
+	};
+  
+  $(function(){
+		goToTop();
+	});
+   
+  </script>
+
+</body>
+</html>             

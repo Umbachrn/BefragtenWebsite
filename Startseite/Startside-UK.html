@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="assets_themes/1/js/jquery-ui/jquery-ui.min.css"> <!-- Stylesheet für website mit jQuery-->
     <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  
 
   <!--[if IE] bzw. wenn Browser=Internet Explorer> 
   <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_compiled_for_IE_part.tpl&amp;type=css&amp;lang_id=10&amp;46747471&amp;frmnd=home_new">
@@ -31,13 +30,14 @@
   <!--CSS für Themify Icons-->
   <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_custom.tpl&amp;type=css&amp;lang_id=10&amp;66099231&amp;frmnd=home_new">
   <!-- eigenes Stylesheet für Anpassungen und Overrides-->
+
   
   <link rel="stylesheet" href="https://www.freda-studie.de/get_include.php?include_name=css_emojione.min.tpl&amp;type=css&amp;lang_id=10&amp;47203692&amp;frmnd=home_new">  <!--Lädt Css für EmojyOne (Icon-Bib um Emojis einheitlich und hübsch darzustellen)-->
   <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_emojione.min.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script> <!-- JS für EmojiOne Darstellung und evtl. Emoji Ersatz in älteren Browsern-->
   <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_dev.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>
   <script type="text/javascript" src="https://www.freda-studie.de/get_include.php?include_name=js_modernizr_efs.tpl&amp;type=javascript&amp;lang_id=10&amp;47203692&amp;frmnd=home_new"></script>  <!--beide Modernizr: überprüft ob Browser bestimmte Webtechniken unterstützt-->
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script>  <!--jQuery von Google CDN wird geladen-->
+  <!-- Auskommentieren der älteren bootstrap version <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
+  <!-- Auskommentieren damit jQuery lädt <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.0.min.js"><\/script>')</script> -->  <!--jQuery von Google CDN wird geladen-->
   <script src="assets_themes/1/js/jquery-ui/jquery-ui.min.js"></script>  <!--jQuery UI (Erweiterung von jQuery) wird geladen: ermöglicht zusätzliche Benutzeroberflächeneffekte-->
 
   <!-- spezielle scripte für Freda-->
@@ -132,7 +132,7 @@
       <ul class="dropdown-menu">
     
         <li>
-          <a href="Startside-DE.html">
+          <a href="../index.html">
             <img src="https://flagcdn.com/w20/de.png" alt="Deutsch" width="20" style="margin-right: 5px;"> Deutsch
           </a>
         </li>
